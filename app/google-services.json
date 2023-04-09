@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "773326097959",
+    "project_id": "spodsmobile",
+    "storage_bucket": "spodsmobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773326097959:android:be1c44def14bc624f98802",
+        "android_client_info": {
+          "package_name": "com.example.spods_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773326097959-l561tg7s9jr3ngjckdgrkcb35m2qi8i1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD58SOSqCcZPHUYRbFs5XfrSRillQjqZUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773326097959-l561tg7s9jr3ngjckdgrkcb35m2qi8i1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

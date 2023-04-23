@@ -7,82 +7,61 @@
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/orange"
         tools:context=".tela_clientes">
 
-
-        <ImageButton
-            android:id="@+id/btn_sair2"
-            android:layout_width="33dp"
-            android:layout_height="48dp"
-            android:background="@android:drawable/divider_horizontal_bright"
-            tools:layout_editor_absoluteX="352dp"
-            tools:layout_editor_absoluteY="244dp"
-            tools:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
-
-        <ImageButton
-            android:id="@+id/btn_sair3"
-            android:layout_width="33dp"
-            android:layout_height="48dp"
-            android:background="@android:drawable/divider_horizontal_bright"
-            tools:layout_editor_absoluteX="352dp"
-            tools:layout_editor_absoluteY="315dp"
-            tools:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
-
-        <ImageButton
-            android:id="@+id/btn_sair4"
-            android:layout_width="33dp"
-            android:layout_height="48dp"
-            android:background="@android:drawable/divider_horizontal_bright"
-            tools:layout_editor_absoluteX="352dp"
-            tools:layout_editor_absoluteY="387dp"
-            tools:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
-
-        <MultiAutoCompleteTextView
-            android:id="@+id/multiAutoCompleteTextView2"
-            android:layout_width="336dp"
-            android:layout_height="45dp"
-            android:text="Joaquim Moveis                  20/02/2023"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="247dp" />
-
-        <MultiAutoCompleteTextView
-            android:id="@+id/multiAutoCompleteTextView6"
-            android:layout_width="336dp"
-            android:layout_height="45dp"
-            android:text="Joaquim Moveis                  20/02/2023"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="318dp" />
-
-        <MultiAutoCompleteTextView
-            android:id="@+id/multiAutoCompleteTextView3"
-            android:layout_width="336dp"
-            android:layout_height="45dp"
-            android:text="Joaquim Moveis                  20/02/2023"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="387dp" />
-
         <View
-            android:id="@+id/view_titulo"
+            android:id="@+id/containerTop"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:background="@drawable/background"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:src="@drawable/spods_logo"
+            app:layout_constraintTop_toTopOf="@id/containerTop"
+            app:layout_constraintStart_toStartOf="@id/containerTop"
+            app:layout_constraintEnd_toEndOf="@id/containerTop"
+            app:layout_constraintBottom_toBottomOf="@id/containerTop"
+            />
+
+        <ImageView
+            android:id="@+id/btn_sair"
+            android:layout_width="56dp"
+            android:layout_height="57dp"
+            android:background="@android:drawable/ic_menu_revert"
+            android:layout_marginLeft="300dp"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="@id/containerTop"
+            app:layout_constraintEnd_toEndOf="@id/containerTop"
+            app:layout_constraintStart_toStartOf="@id/containerTop"
+            app:layout_constraintTop_toTopOf="@id/containerTop" />
 
         <TextView
-            android:id="@+id/titulo"
-            android:layout_width="252dp"
-            android:layout_height="64dp"
-            android:gravity="center"
+            android:id="@+id/titulo_clientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Clientes"
+            android:textSize="20sp"
+            android:gravity="center"
             android:textColor="@color/gray"
-            android:textSize="24dp"
-            tools:layout_editor_absoluteX="74dp"
-            tools:layout_editor_absoluteY="62dp" />
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

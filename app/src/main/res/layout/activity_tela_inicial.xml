@@ -1,20 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_pedidos"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_height="match_parent"
-    tools:context=".TelaInicial">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bem Vindo ao SPODS"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
+        android:background="@color/orange"
+        tools:context=".tela_inicial">
 
-  </LinearLayout>
+        <View
+            android:id="@+id/containerTop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/spods_logo"
+            app:layout_constraintBottom_toBottomOf="@id/containerTop"
+            app:layout_constraintEnd_toEndOf="@id/containerTop"
+            app:layout_constraintStart_toStartOf="@id/containerTop"
+            app:layout_constraintTop_toTopOf="@id/containerTop" />
+
+        <ImageView
+            android:id="@+id/btn_sair"
+            android:layout_width="56dp"
+            android:layout_height="57dp"
+            android:background="@android:drawable/ic_menu_revert"
+            android:layout_marginLeft="300dp"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="@id/containerTop"
+            app:layout_constraintEnd_toEndOf="@id/containerTop"
+            app:layout_constraintStart_toStartOf="@id/containerTop"
+            app:layout_constraintTop_toTopOf="@id/containerTop" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_servico_pres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serviços Prestados"
+            android:layout_marginTop="50dp"
+            android:textAllCaps="false"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:background="@drawable/btn_selecionado"
+            android:enabled="true"
+            app:layout_constraintTop_toBottomOf="@id/containerTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_clientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clientes"
+            android:layout_marginTop="50dp"
+            android:textAllCaps="false"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:background="@drawable/btn_selecionado"
+            android:enabled="true"
+            app:layout_constraintTop_toBottomOf="@id/btn_servico_pres"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_solicitacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Novas Solicitações"
+            android:layout_marginTop="50dp"
+            android:textAllCaps="false"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:background="@drawable/btn_selecionado"
+            android:enabled="true"
+            app:layout_constraintTop_toBottomOf="@id/btn_clientes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <View
+            android:layout_width="413dp"
+            android:layout_height="116dp"
+            android:background="@drawable/background_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

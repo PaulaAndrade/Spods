@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        tools:context=".MainActivity">
+
+
+        <View
+            android:id="@+id/view_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="252dp"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:text="Serviços Prestados"
+            android:textColor="@color/gray"
+            android:textSize="24dp"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView"
+            android:layout_width="336dp"
+            android:layout_height="45dp"
+            android:text="Joaquim Moveis                  20/02/2023"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="246dp" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView4"
+            android:layout_width="336dp"
+            android:layout_height="45dp"
+            android:text="Joaquim Moveis                  22/02/2023"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="316dp" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView5"
+            android:layout_width="336dp"
+            android:layout_height="45dp"
+            android:text="Joaquim Moveis                  25/02/2023"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="385dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

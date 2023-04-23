@@ -12,4 +12,6 @@ class TelaInicial : AppCompatActivity() {
         supportActionBar!!.hide()
         window.statusBarColor= Color.parseColor("#FCE06D1F")
     }
+
+
 }

@@ -7,10 +7,12 @@
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/orange"
-        tools:context=".tela_servicos">
+        tools:context=".desenvolvedores">
 
         <View
             android:id="@+id/containerTop"
@@ -46,10 +48,10 @@
             app:layout_constraintTop_toTopOf="@id/containerTop" />
 
         <TextView
-            android:id="@+id/titulo_servicos"
+            android:id="@+id/titulo_clientes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Serviços Prestados"
+            android:text="Desenvolvedores"
             android:textSize="18sp"
             android:gravity="center"
             android:textColor="@color/gray"
@@ -60,6 +62,19 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             />
+
+        <TableLayout
+            app:layout_constraintBottom_toBottomOf="@+id/titulo_clientes"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:shrinkColumns="*"
+            android:background="@android:color/white">
+        </TableLayout>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

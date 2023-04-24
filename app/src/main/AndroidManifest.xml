@@ -12,6 +12,18 @@
         android:theme="@style/Theme.Spods_login"
         tools:targetApi="31">
         <activity
+            android:name=".lista_ordens"
+            android:exported="false" />
+        <activity
+            android:name=".cad_devs"
+            android:exported="false" />
+        <activity
+            android:name=".cad_ordem_serv"
+            android:exported="false" />
+        <activity
+            android:name=".cad_clientes"
+            android:exported="false" />
+        <activity
             android:name=".desenvolvedores"
             android:exported="false" />
         <activity

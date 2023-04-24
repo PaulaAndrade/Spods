@@ -37,9 +37,9 @@
             android:id="@+id/btn_sair"
             android:layout_width="56dp"
             android:layout_height="57dp"
-            android:background="@android:drawable/ic_menu_revert"
             android:layout_marginLeft="300dp"
             android:layout_marginBottom="100dp"
+            android:background="@drawable/exit"
             app:layout_constraintBottom_toBottomOf="@id/containerTop"
             app:layout_constraintEnd_toEndOf="@id/containerTop"
             app:layout_constraintStart_toStartOf="@id/containerTop"
@@ -60,6 +60,17 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             />
+
+        <TableLayout
+            app:layout_constraintBottom_toBottomOf="@+id/containerTop"
+            android:layout_marginTop="40dp"
+            android:id="@+id/tb_SO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="3"
+            android:shrinkColumns="6"
+            android:background="@android:color/white">
+        </TableLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

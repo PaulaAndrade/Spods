@@ -26,7 +26,7 @@
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/spods_logo"
+            android:background="@drawable/ic_launcher_foreground"
             app:layout_constraintBottom_toBottomOf="@id/containerTop"
             app:layout_constraintEnd_toEndOf="@id/containerTop"
             app:layout_constraintStart_toStartOf="@id/containerTop"
@@ -36,13 +36,14 @@
             android:id="@+id/btn_sair"
             android:layout_width="56dp"
             android:layout_height="57dp"
-            android:background="@android:drawable/ic_menu_revert"
             android:layout_marginLeft="300dp"
             android:layout_marginBottom="100dp"
+            android:background="@drawable/exit"
             app:layout_constraintBottom_toBottomOf="@id/containerTop"
             app:layout_constraintEnd_toEndOf="@id/containerTop"
             app:layout_constraintStart_toStartOf="@id/containerTop"
             app:layout_constraintTop_toTopOf="@id/containerTop" />
+
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_servico_pres"
@@ -109,12 +110,22 @@
             />
 
         <View
+            android:id="@+id/containerBot"
             android:layout_width="413dp"
             android:layout_height="116dp"
             android:background="@drawable/background_view"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:src="@drawable/spods_logo"
+            app:layout_constraintBottom_toBottomOf="@id/containerBot"
+            app:layout_constraintEnd_toEndOf="@id/containerBot"
+            app:layout_constraintStart_toStartOf="@id/containerBot"
+            app:layout_constraintTop_toTopOf="@id/containerBot" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -47,11 +47,23 @@
             app:layout_constraintStart_toStartOf="@id/containerTop"
             app:layout_constraintTop_toTopOf="@id/containerTop" />
 
+        <ImageView
+            android:id="@+id/btn_novo_desenvolvedor"
+            android:layout_width="56dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="360dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/add"
+            app:layout_constraintBottom_toBottomOf="@id/containerTop"
+            app:layout_constraintEnd_toEndOf="@id/containerTop"
+            app:layout_constraintStart_toStartOf="@id/containerTop"
+            app:layout_constraintTop_toTopOf="@id/containerTop" />
+
         <TextView
             android:id="@+id/titulo_servicos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Serviços Prestados"
+            android:text="Novos Serviços"
             android:textSize="18sp"
             android:gravity="center"
             android:textColor="@color/gray"

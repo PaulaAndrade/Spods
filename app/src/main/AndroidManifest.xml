@@ -18,17 +18,6 @@
             android:name=".solicitacoes"
             android:exported="false" />
         <activity
-            android:name=".Novos_Servicos"
-            android:exported="true"
-            android:label="@string/title_activity_novos_servicos"
-            android:theme="@style/Theme.Spods_login.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".TelaClientes"
             android:exported="false" />
         <activity

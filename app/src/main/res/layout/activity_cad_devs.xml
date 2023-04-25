@@ -50,7 +50,7 @@
             android:id="@+id/txt_desenvolvedores"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cadastro"
+            android:text="Cadastro de Desenvolvedores"
             android:textSize="18sp"
             android:gravity="center"
             android:textColor="@color/gray"
@@ -62,17 +62,151 @@
             android:layout_marginEnd="20dp"
             />
 
-        <TableLayout
-            app:layout_constraintBottom_toBottomOf="@+id/containerTop"
-            android:layout_marginTop="40dp"
-            android:id="@+id/tb_devs"
+        <TextView
+            android:id="@+id/txt_dev"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:stretchColumns="3"
-            android:shrinkColumns="6"
-            android:background="@android:color/white">
-        </TableLayout>
+            android:text="Nome Completo"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/containerTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome completo do Desenvolvedor"
+            android:layout_marginTop="20dp"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:background="@drawable/background_text"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_dev"
+            />
+
+        <TextView
+            android:id="@+id/txt_email_dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email para Contato"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/nome_dev"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira um email"
+            android:layout_marginTop="20dp"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:background="@drawable/background_text"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_email_dev"
+            />
+
+        <TextView
+            android:id="@+id/txt_documento_dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPF"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/email_dev"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/documento_dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CPF "
+            android:layout_marginTop="20dp"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:background="@drawable/background_text"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_documento_dev"
+            />
+
+        <TextView
+            android:id="@+id/txt_funcao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Função na Empresa"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/documento_dev"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/funcao_dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Programador Junior"
+            android:layout_marginTop="20dp"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:background="@drawable/background_text"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_funcao"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cadastrar_dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:textAllCaps="false"
+            android:padding="20dp"
+            android:textSize="18dp"
+            android:background="@drawable/btn_selecionado"
+            android:enabled="true"
+            app:layout_constraintTop_toBottomOf="@id/funcao_dev"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

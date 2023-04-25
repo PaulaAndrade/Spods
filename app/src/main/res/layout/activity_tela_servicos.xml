@@ -16,7 +16,7 @@
             android:id="@+id/containerTop"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@drawable/background"
+            android:background="@drawable/background_reto"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -62,9 +62,9 @@
             />
 
         <TableLayout
-            app:layout_constraintBottom_toBottomOf="@+id/containerTop"
-            android:layout_marginTop="40dp"
-            android:id="@+id/tb_SO"
+            app:layout_constraintTop_toBottomOf="@+id/containerTop"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tb_devs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:stretchColumns="3"
